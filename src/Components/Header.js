@@ -19,7 +19,7 @@ function Header() {
     <div className='custom-nav d-flex justify-content-center'>
       
         <div className='offcanvas-ham-menu'><OffCanvas /></div>
-        <div className='nav-icon-text d-flex '><img src={icon}/><p>stack  <strong>overflow</strong></p></div>
+        <div className='nav-icon-text d-flex '><Link to="/"><img src={icon}/></Link><p>stack  <strong>overflow</strong></p></div>
         <div className='nav-ul d-flex justify-content-center'>
           <ul className='list-unstyled'>
             <li>About</li>

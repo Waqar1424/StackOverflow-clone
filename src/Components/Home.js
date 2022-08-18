@@ -10,6 +10,7 @@ import ForTeamsDiv from '../images/for-teams-div.svg';
 import Carousel from 'react-bootstrap/Carousel';
 import {ReactComponent as SearchDivIcon} from '../images/Svgs/Search-div-icon.svg';
 import {ReactComponent as LockDivIcon} from '../images/Svgs/Lock-div-icon.svg';
+import {ReactComponent as RoundTickIcon} from '../images/Svgs/RoundTick.svg';
 /* Components Export*/
 import Courses from './Courses';
 import BillingCards from './BillingCards';
@@ -19,6 +20,7 @@ import Features from './Features';
 import Quotes from './Quotes';
 import AdditionalProducts from './AdditionalProducts';
 import CreateFreeTeam from './CreateFreeTeam';
+import ExampleCarousel from './Carousel';
 
 /* Animation */
 import Aos from 'aos';
@@ -124,40 +126,7 @@ function Home() {
 
           <div className='row justify-content-center'>
             <div className='col-11 col-sm-7 carousel-text'>Thousands of organizations around the globe use Stack Overflow for Teams</div>
-              <div className='col-11 col-sm-10 carosel-main-div'>
-              <Carousel>
-                  <Carousel.Item>
-                      <div className='row justify-content-center carousel-item-1'>
-                        <div className='col-12 d-flex justify-content-center '>
-                          <img src={Item1Img1} alt=""/>
-                          <img src={Item2Img2} alt=""/>
-                          <img src={Item3Img3} alt=""/>
-                          <img width="150px" height="100px" src={Item4Img4} alt=""/>
-                        </div>
-                      </div>
-                  </Carousel.Item>
-                  <Carousel.Item>
-                  <div className='row justify-content-center carousel-item-1'>
-                        <div className='col-12 d-flex justify-content-center '>
-                          <img src={ItemTImg1} alt=""/>
-                          <img src={ItemTImg2} alt=""/>
-                          <img src={ItemTImg3} alt=""/>
-                          <img width="150px" height="100px" src={ItemTImg4} alt=""/>
-                        </div>
-                      </div>
-                  </Carousel.Item>
-                  <Carousel.Item>
-                  <div className='row justify-content-center carousel-item-1'>
-                        <div className='col-12 d-flex justify-content-center '>
-                          <img src={ItemThImg1} alt=""/>
-                          <img src={ItemThImg2} alt=""/>
-                          <img src={ItemThImg3} alt=""/>
-                          <img width="150px" height="100px" src={ItemThImg4} alt=""/>
-                        </div>
-                      </div>
-                  </Carousel.Item>
-              </Carousel>
-              </div>
+              <ExampleCarousel />
           </div>
 
           <div className='row justify-content-center'>
@@ -171,14 +140,17 @@ function Home() {
               </div>
               <div className='row justify-content-center'>
                   <div className='col-11 col-sm-4 marketing-row' data-aos="zoom-in">
+                      <span><RoundTickIcon/></span>
                       <h4>Increase productivity</h4>
                       <p>If somebody somewhere has the right answer, suddenly you have it too. Collaborate better in a remote-first world.</p>
                   </div>
                   <div className='col-11 col-sm-4 marketing-row' data-aos="zoom-in">
+                      <span><RoundTickIcon/></span>
                       <h4>Accelerate time to market</h4>
                       <p>If somebody somewhere has the right answer, suddenly you have it too. Collaborate better in a remote-first world.</p>
                   </div>
                   <div className='col-11 col-sm-4 marketing-row' data-aos="zoom-in">
+                      <span><RoundTickIcon/></span>
                       <h4>Protect institutional knowledge</h4>
                       <p>If somebody somewhere has the right answer, suddenly you have it too. Collaborate better in a remote-first world.</p>
                   </div>

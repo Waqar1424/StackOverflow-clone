@@ -29,6 +29,11 @@
   width: 4%;
   padding-top: 12px;
 }
+@media (min-width: 769px) and (max-width: 1550px) {
+  .offcanvas-ham-menu {
+    margin-left: -25px;
+  }
+}
 .nav-icon-text {
   width: 14%;
 }
@@ -58,12 +63,13 @@
   color: hsl(210, 8%, 35%);
   cursor: pointer;
 }
-.nav-ul ul li:hover{
-  background-color: #E3E6E8;
+.nav-ul ul li:hover {
+  background-color: #e3e6e8;
   border-radius: 50%;
 }
 .nav-search {
   width: 52%;
+  outline: none !important;
 }
 .nav-search input {
   width: 98%;
@@ -126,48 +132,47 @@
 .nav-btn-b span {
   text-align: center;
 }
-.search-nav-icon{
+.search-nav-icon {
   display: none;
 }
-@media (min-width: 769px) and (max-width: 1250px){
-  .home-main-search-div{
+@media (min-width: 769px) and (max-width: 1250px) {
+  .home-main-search-div {
     height: 31rem !important;
   }
-  .home-main-lock-div{
+  .home-main-lock-div {
     height: 31rem !important;
   }
   .nav-icon-text {
     margin-left: 10px !important;
     width: 25%;
   }
-  .offcanvas-ham-menu{
+  .offcanvas-ham-menu {
     width: 8%;
   }
   .nav-ul {
     width: 30%;
   }
-  .nav-btn{
+  .nav-btn {
     width: 20%;
   }
-  .nav-btn-l{
+  .nav-btn-l {
     font-size: 80% !important;
     width: 45%;
     height: 33px;
   }
-  .nav-btn-s{
+  .nav-btn-s {
     font-size: 80% !important;
     width: 45%;
     height: 33px;
   }
-
 }
-@media only screen and (max-width: 820px){
-  .nav-ul ul li:nth-child(1){
+@media only screen and (max-width: 820px) {
+  .nav-ul ul li:nth-child(1) {
     display: none;
   }
-  .nav-ul ul li:nth-child(3){
+  .nav-ul ul li:nth-child(3) {
     display: none;
-  } 
+  }
 }
 @media only screen and (max-width: 768px) {
   .nav-search {
@@ -179,59 +184,59 @@
   .nav-ul {
     width: 17%;
   }
-  .nav-ul ul li:nth-child(1){
+  .nav-ul ul li:nth-child(1) {
     display: none;
   }
-  .nav-ul ul li:nth-child(3){
+  .nav-ul ul li:nth-child(3) {
     display: none;
   }
 }
-@media only screen and (max-width: 690px){
-  .nav-icon-text p{
+@media only screen and (max-width: 690px) {
+  .nav-icon-text p {
     display: none;
   }
 }
 @media only screen and (max-width: 600px) {
-  .create-free-teams{
+  .create-free-teams {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .icon-login{
+  .icon-login {
     margin-top: 7rem;
   }
-  .offcanvas-ham-menu{
+  .offcanvas-ham-menu {
     width: 10%;
   }
-  .nav-search{
+  .nav-search {
     display: none;
   }
-  .nav-ul ul{
+  .nav-ul ul {
     display: none;
   }
-  .search-nav-icon{
+  .search-nav-icon {
     margin-top: 10px;
     display: block;
   }
-  .nav-icon-text img{
+  .nav-icon-text img {
     margin-left: 15 px;
     padding-left: 14px;
   }
 
-  .nav-btn{
+  .nav-btn {
     width: 45%;
   }
-  .nav-btn-l{
+  .nav-btn-l {
     font-size: 80% !important;
     width: 33%;
     height: 33px;
   }
-  .nav-btn-s{
+  .nav-btn-s {
     font-size: 80% !important;
     width: 36%;
     height: 33px;
   }
-  .signup-text-div{
+  .signup-text-div {
     display: none;
   }
 }
@@ -277,6 +282,11 @@
   position: fixed;
   margin-top: 53px;
   width: 20% !important;
+}
+@media only screen and (max-width: 1200px) {
+  .offCanvas-ofc {
+    width: 30% !important;
+  }
 }
 @media only screen and (max-width: 600px) {
   .offCanvas-ofc {
@@ -358,25 +368,42 @@
   background-color: #232629;
   color: #909499;
   padding-left: 10px;
+  padding-bottom: 1.8rem;
 }
 .footer ul li {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 13px;
-  line-height: 25px;
+  line-height: 28px;
 }
 .icon-footer {
-  height: 40px;
-  margin-top: 20px;
+  height: 44px;
+  margin-top: 28px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+.lt-div {
+  width: 29% !important;
+  position: relative;
 }
 .lt-div ul li {
   display: inline-block;
   margin: 0 5px;
-  font-size: 11px;
-  margin-top: 35px;
+  font-size: 12px;
+  margin-top: 38px;
+  line-height: 17px;
+}
+.lt-div-p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #9199a1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .footer h6 {
-  margin-top: 35px;
+  margin-top: 38px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted",
     "Segoe UI", "Liberation Sans", sans-serif;
   font-weight: 700;
@@ -385,7 +412,7 @@
   color: #babfc4;
 }
 .icon-footer-div {
-  width: 7% !important;
+  width: 5% !important;
 }
 .products-footer-div {
   width: 13% !important;
@@ -420,6 +447,13 @@
   .network-footer-div {
     width: 100% !important;
   }
+  .lt-div {
+    width: 100% !important;
+  }
+  .lt-div-p {
+    top: 32px;
+    margin-left: 10px;
+  }
 }
 /* Login Page*/
 .login-bg {
@@ -427,6 +461,7 @@
   width: 100%;
   overflow: hidden;
   min-height: 100vh;
+  margin-top: 53.5px;
 }
 .icon-login {
   height: 50px;
@@ -512,6 +547,7 @@
   background-color: #f1f2f3;
   width: 100%;
   overflow: hidden;
+  margin-top: 53.5px;
 }
 .sign-up-p-join {
   font-size: 25px;
@@ -655,7 +691,6 @@
   .home-search-icon {
     margin-top: 20px !important;
   }
-
 }
 .home-search-icon {
   margin-top: 36px;
@@ -668,7 +703,11 @@
 }
 .home-main-search-div Button {
   background-color: var(--primary-color);
+  padding: 10px 40px 10px 40px;
   border: none;
+}
+.home-main-search-div Button:hover {
+  background-color: #da680b !important;
 }
 
 .home-main-lock-div {
@@ -690,13 +729,15 @@
     margin-left: 0px !important;
   }
   .home-main-lock-div-button {
-    width: 80% ;
+    width: 90%;
     margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px 0px 5px 0px !important;
   }
-  .home-main-lock-div-button-1{
-    width: 80% ;
+  .home-main-lock-div-button-1 {
+    margin-top: 10px;
+    width: 90%;
   }
-
 }
 .home-main-lock-div p {
   font-size: 20px;
@@ -706,17 +747,18 @@
 }
 .home-main-lock-div-button {
   margin-right: 10px;
-  background-color: #0a95ff !important; 
-}
-.home-main-lock-div-button:hover{
-  background-color: #0074CC !important; 
-}
-.home-main-lock-div-button-1{
-  margin-top: 5px !important;
   background-color: #0a95ff !important;
+  margin-bottom: 2rem;
 }
-.home-main-lock-div-button-1:hover{
-  background-color: #0074CC!important; 
+.home-main-lock-div-button:hover {
+  background-color: #0074cc !important;
+}
+.home-main-lock-div-button-1 {
+  background-color: #0a95ff !important;
+  margin-bottom: 2rem;
+}
+.home-main-lock-div-button-1:hover {
+  background-color: #0074cc !important;
 }
 .home-main-link {
   font-size: 12px !important;
@@ -762,7 +804,7 @@
 .react-typed {
   color: var(--primary-color);
 }
-.ratings{
+.ratings {
   width: 20% !important;
 }
 .ratings h3 {
@@ -790,7 +832,7 @@
 }
 
 /*Second Part*/
-.stack-teams-main-div{
+.stack-teams-main-div {
   margin-top: 0rem !important;
 }
 .stack-overflow-div {
@@ -807,25 +849,25 @@
 .stack-overflow-div div {
   margin-top: 50px;
 }
-.icon-stack-overflow-div{
+.icon-stack-overflow-div {
   height: 40px;
 }
 .stack-overflow-div div span {
   font-size: 30px;
 }
 .stack-overflow-div-image img {
-width: 100%;
+  width: 100%;
 }
 @media only screen and (max-width: 768px) {
-  .stack-overflow-div{
+  .stack-overflow-div {
     width: 40% !important;
   }
-  .nav-search{
+  .nav-search {
     width: 35% !important;
   }
   .for-teams-div {
     width: 40% !important;
-  }     
+  }
 }
 @media only screen and (max-width: 600px) {
   .stack-overflow-div {
@@ -872,7 +914,7 @@ width: 100%;
   font-size: 30px;
 }
 .for-teams-div-image img {
-width: 100%;
+  width: 100%;
 }
 .for-teams-div-bold-text {
   font-weight: 700;
@@ -932,9 +974,9 @@ width: 100%;
 }
 .sec-main-div-p Button {
   padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+  padding-right: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   margin-top: 40px !important;
   background-color: #0a95ff !important;
 }
@@ -943,6 +985,9 @@ width: 100%;
 }
 .marketing-row {
   margin-top: 60px !important;
+}
+.marketing-row span {
+  margin: 20px;
 }
 .marketing-row h4 {
   color: whitesmoke !important;
@@ -964,6 +1009,9 @@ width: 100%;
   width: 80%;
   margin: auto !important;
   margin-top: 60px !important;
+}
+.course-main-div{
+  margin-bottom: 4rem ;
 }
 .courses-div .title-div h2 {
   color: whitesmoke !important;
@@ -1013,6 +1061,35 @@ width: 100%;
   background-color: #ffffff;
   margin: 20px;
 }
+.billing-card-recommended {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f2f3;
+  margin-left: -12px;
+  width: 108.4%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: -38px;
+}
+.billing-card-recommended p {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.billing-card-recommended span {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+@media only screen and (mix-width: 600px) {
+  .billing-card-recommended {
+    width: 108.4% !important;
+  }
+}
+/* @media only screen and (min-width: 1500px) {
+  .billing-cards{
+    width: 22%;
+    margin: 0px;
+  }
+} */
 .billing-cards Button {
   margin-top: 20px !important;
 }
@@ -1065,7 +1142,7 @@ width: 100%;
   margin-left: 15%;
   margin-right: 15%;
 }
-.btn-d-1-p{
+.btn-d-1-p {
   margin-left: 18%;
 }
 .btn-d-2 {
@@ -1075,7 +1152,7 @@ width: 100%;
   margin-left: 15%;
   margin-right: 15%;
 }
-.btn-d-2-p{
+.btn-d-2-p {
   margin-left: 18%;
 }
 .btn-d-3 {
@@ -1085,7 +1162,7 @@ width: 100%;
   margin-left: 15%;
   margin-right: 15%;
 }
-.btn-d-3-p{
+.btn-d-3-p {
   margin-left: 18%;
 }
 .btn-d-4 {
@@ -1095,9 +1172,8 @@ width: 100%;
   margin-left: 15%;
   margin-right: 15%;
 }
-.btn-d-4-p{
+.btn-d-4-p {
   margin-left: 18%;
-
 }
 
 /*Calculations*/
@@ -1171,8 +1247,8 @@ width: 100%;
   margin-top: 0 !important;
 }
 .feature-main-div {
-      margin-top: -3rem !important;
-    }
+  margin-top: -3rem !important;
+}
 .feature-div {
   width: 22%;
   background-color: #d6d9dc;
@@ -1248,4 +1324,31 @@ width: 100%;
 .create-free-teams Button:hover {
   background-color: #f0f8ff;
   color: #0063bf;
+}
+
+.slick-dots {
+  margin-bottom: -6rem;
+}
+.slick-dots-bottom li {
+  background-color: lightgray;
+  height: 7px !important;
+  width: 30px !important;
+  border-radius: 50px !important;
+}
+.slick-dots-bottom li:hover {
+  background-color: lightslategrey;
+}
+.ant-carousel .slick-dots li.slick-active button {
+  background: #000 !important;
+  margin-top: -0.5px !important;
+  height: 8px !important;
+  width: 30px !important;
+  border-radius: 50px !important;
+}
+.ant-carousel .slick-dots li.slick-active button:hover {
+  background-color: lightslategrey !important;
+}
+
+.carousel-img img {
+  margin-left: 2.5rem;
 }

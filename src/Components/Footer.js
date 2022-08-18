@@ -58,14 +58,15 @@ function Footer()  {
                                     <li>Data</li>
                                 </ul>
                             </div>
-                            <div className="col-12 col-sm-3 text-start lt-div blog-footer-div">
+                            <div className="col-12 col-sm-3 text-start lt-div">
                             <ul className="list-unstyled">
                                     <li>Blog</li>
                                     <li>Facebook</li>
                                     <li>Twitter</li>
                                     <li>LinkedIn</li>
                                     <li>Instagram</li>
-                                </ul>
+                            </ul>
+                            <p className='lt-div-p'>Site design / logo © 2022 Stack Exchange Inc; user contributions licensed under CC BY-SA. rev 2022.8.16.42833</p>
                             </div>
                         </div>
                     </div>

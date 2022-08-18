@@ -15,11 +15,12 @@ import {ReactComponent as PeopleIcon} from '../images/Svgs/People.svg';
 import {ReactComponent as PeakIcon} from '../images/Svgs/Peak.svg';
 import {ReactComponent as CodeIcon} from '../images/Svgs/Code.svg';
 import {ReactComponent as MessageQuestionIcon} from '../images/Svgs/MessageQuestion.svg';
+import {ReactComponent as IndustryIcon} from '../images/Svgs/Industry.svg';
 
 function BillingCards() {
   return (
     <div className='row justify-content-center billing-cards-main-div'>
-            <div className='col-11 col-sm-3 billing-cards justify-content-start text-start'>
+            <div className='col-11 col-sm-3 col-lg-3 billing-cards justify-content-start text-start'>
                 <Button className='btn-u-1' >Free</Button>
                 <h3>Free</h3>
                 <p>No credit card required</p>
@@ -32,7 +33,7 @@ function BillingCards() {
                 <Button className='btn-d-1'>Create a free Team</Button>
                 <p className='btn-d-1-p'>Always free up to 50 teammates</p>
             </div>
-            <div className='col-11 col-sm-3 billing-cards justify-content-start text-start'>
+            <div className='col-11 col-sm-3 col-lg-3 billing-cards justify-content-start text-start'>
                 <Button className='btn-u-2'>Basic</Button>
                 <h3>$6 USD</h3>
                 <p>per teammate / month</p>
@@ -46,27 +47,33 @@ function BillingCards() {
                 <Button className='btn-d-2'>Get Started</Button>
                 <p className='btn-d-2-p'>Always free up to 50 teammates</p>
             </div>
-            <div className='col-11 col-sm-3 billing-cards justify-content-start text-start'>
-                <Button className='btn-u-3'>Business</Button>
-                <h3>$12 USD</h3>
-                <p>per teammate / month</p>
-                <hr className='billing-hr'/>
-                <ul className='list-unstyled'>
-                  <li><PlusIcon /> All the features of Basic plus…</li>
-                  <li><DocumentIcon/> Long-form knowledge with Articles</li>
-                  <li><LinkIcon /> Additional integrations — ChatOps, Jira, GitHub & Okta</li>
-                  <li><CollectionIcon/> content together into Collections</li>
-                  <li><GraphIcon /> Usage and adoption metrics</li>
-                  <li><HealthIcon /> Priority customer support</li>
-                  <li><ToolIcon />Content Health tools</li>
-                </ul>
-                <Button className='btn-d-3'>Get Started</Button>
-                <p className='btn-d-3-p'>Always free up to 50 teammates</p>
+            <div className='col-11 col-sm-3 col-lg-3 billing-cards  text-start'>
+            <div className='billing-card-recommended'>
+                  <p>Recommended</p>
+                  <span><IndustryIcon /></span>
             </div>
-            <div className='col-11 col-sm-3 billing-cards justify-content-start text-start'>
-                <Button className='btn-u-4'>Business</Button>
-                <h3>$12 USD</h3>
-                <p>per teammate / month</p>
+              <div className='justify-content-start'>
+                  <Button className='btn-u-3'>Business</Button>
+                  <h3>$12 USD</h3>
+                  <p>per teammate / month</p>
+                  <hr className='billing-hr'/>
+                  <ul className='list-unstyled'>
+                    <li><PlusIcon /> All the features of Basic plus…</li>
+                    <li><DocumentIcon/> Long-form knowledge with Articles</li>
+                    <li><LinkIcon /> Additional integrations — ChatOps, Jira, GitHub & Okta</li>
+                    <li><CollectionIcon/> content together into Collections</li>
+                    <li><GraphIcon /> Usage and adoption metrics</li>
+                    <li><HealthIcon /> Priority customer support</li>
+                    <li><ToolIcon />Content Health tools</li>
+                  </ul>
+                  <Button className='btn-d-3'>Get Started</Button>
+                  <p className='btn-d-3-p'>Always free up to 50 teammates</p>
+                </div>
+            </div>
+            <div className='col-11 col-sm-3 col-lg-3 billing-cards justify-content-start text-start'>
+                <Button className='btn-u-4'>Enterprise</Button>
+                <h3>Custom Pricing</h3>
+                <p>Let's talk about what you need</p>
                 <hr className='billing-hr'/>
                 <ul className='list-unstyled'>
                   <li><PlusIcon/> Premium features of Business plus…</li>
