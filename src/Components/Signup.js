@@ -76,6 +76,7 @@ function Signup() {
                 <div className='d-flex justify-content-center'><div className='icon-div-btn'><RiFacebookBoxFill  className='icon-' size='1.3rem'/></div><p className="icon-text-div-btn" style={{color: "white"}}>&nbsp;Log in with Google</p></div>
                 </Button>
                 {console.log("test")}
+                {console.log("test")}
               </div>
               <div  className='d-flex justify-content-center'>
                 
